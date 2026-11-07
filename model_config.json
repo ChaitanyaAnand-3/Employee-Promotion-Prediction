@@ -1,0 +1,44 @@
+{
+  "threshold": 0.3028,
+  "threshold_source": "5-fold stratified out-of-fold F1 optimization",
+  "algorithm": "CatBoostClassifier",
+  "model_file": "promotion_model.joblib",
+  "expected_features": [
+    "department",
+    "region",
+    "education",
+    "gender",
+    "recruitment_channel",
+    "no_of_trainings",
+    "age",
+    "previous_year_rating",
+    "length_of_service",
+    "KPIs_met >80%",
+    "awards_won?",
+    "avg_training_score",
+    "training_per_service",
+    "score_x_kpi",
+    "rating_x_kpi",
+    "age_service_gap"
+  ],
+  "categorical_features": [
+    "department",
+    "region",
+    "education",
+    "gender",
+    "recruitment_channel"
+  ],
+  "numeric_features": [
+    "no_of_trainings",
+    "age",
+    "previous_year_rating",
+    "length_of_service",
+    "KPIs_met >80%",
+    "awards_won?",
+    "avg_training_score",
+    "training_per_service",
+    "score_x_kpi",
+    "rating_x_kpi",
+    "age_service_gap"
+  ]
+}
